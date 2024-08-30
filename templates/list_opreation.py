@@ -1,0 +1,13 @@
+my_list = []
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
+my_list.append(50)
+print('my list is :', my_list)
+my_list.sort()
+print('sort list is :', my_list)
+my_list.remove(30)
+print('after remove element', my_list)
+my_list.pop()
+print('after pop a element', my_list)
