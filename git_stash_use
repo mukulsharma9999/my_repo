@@ -1,0 +1,53 @@
+1. git stash Command ka Use Kyu Hota Hai?
+Socho aap kisi project par kaam kar rahe hain aur kuch files mein changes kiye hain, lekin aapko achanak kisi aur urgent kaam ke liye branch switch karna pad raha hai. Aap nahi chahenge ki aapke current changes save na ho aur bhi nahi chahenge ki aap unhe commit karein kyunki woh complete nahi hain. Is situation mein git stash aapko help karega.
+
+git stash kya karta hai?
+Ye command aapke current changes ko temporarily save karta hai aur working directory ko clean kar deta hai. Matlab, jo changes aapne kiye hain wo kahi safe jagah par store ho jate hain, taaki aap unhe baad mein wapas la sakte hain.
+
+Example:
+
+
+
+#git stash
+Is command ko run karne se, aapke current changes store ho jayenge aur aapke paas ek saaf working directory hogi.
+
+2. git commit -m Command ka Use Kyu Hota Hai?
+git commit -m: Jab aap kisi kaam ko complete kar lete hain aur chahte hain ki aapke changes permanently save ho jayein aur uske saath ek message bhi ho ki ye changes kis liye the, tab aap git commit -m command use karte hain.
+
+Example:
+
+
+#git commit -m "Fixed the login bug"
+Ye command aapke changes ko save kar deta hai local repository mein aur saath mein message bhi deta hai taaki aap ya koi aur developer samajh sake ki ye changes kis liye the.
+
+3. Stash ke Baad Changes Ko Wapas Lakar Commit Kaise Karein?
+Jab aapne git stash se apne changes ko temporarily save kiya hai, aur ab aap unhe wapas lana chahte hain aur commit karna chahte hain, to ye steps follow karein:
+
+Changes ko wapas lana (Apply/Pop):
+
+Apply (rakhe rakhna stash mein): Agar aap chahte hain ki changes ko apply karein lekin stash ko remove na karein, use karein:
+
+#git stash apply
+Pop (remove kar dena stash se): Agar aap chahte hain ki changes ko apply karke stash se hata de, use karein:
+
+#git stash pop
+Isse aapke changes wapas aajayenge aapke working directory mein.
+
+Changes ko commit karna:
+
+Ab aapke changes wapas aa gaye hain, aap unhe commit kar sakte hain:
+
+#git add .
+git commit -m "Applied stashed changes and committing them"
+In steps se, aap apne changes ko safely side par rakh sakte hain jab tak aap unhe use karne ke liye ready na ho jaayein. Isse aap apne kaam ko smoothly manage kar sakte hain bina kisi dikkat ke.
+
+Umeed karta hoon, ab aapko samajh mein aaya hoga ki git stash aur git commit -m kaise aur kyu use kiya jata hai.
+
+
+
+
+
+
+
+
+
